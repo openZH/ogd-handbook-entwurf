@@ -23,11 +23,11 @@ const config = {
   url: "https://openZH.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/ogd-handbook/",
+  baseUrl: "/ogd-handbook-entwurf/",
 
   // GitHub pages deployment config.
   organizationName: "openZH",
-  projectName: "ogd-handbook",
+  projectName: "ogd-handbook-entwurf",
 
   onBrokenLinks: "throw",
 
@@ -112,7 +112,7 @@ const config = {
             position: "right",
           },
           {
-            href: "https://github.com/openZH/ogd-handbook",
+            href: "https://github.com/openZH/ogd-handbook-entwurf",
             label: "GitHub",
             position: "right",
           },
