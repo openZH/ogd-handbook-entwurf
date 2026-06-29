@@ -25,7 +25,7 @@ Das Statistische Amt entwickelt derzeit eine Visualisierungslibrary, mit der sic
 
 <Card title="Visualisierung: Bevölkerung" href="https://www.zh.ch/de/soziales/bevoelkerungszahlen/bestand-struktur.html">
 
-<img src="/ogd-handbook/img/datavis_bevölkerung.png" alt="Screenshot Bevölkerungsvisualisierung auf zh.ch" style={{width: '100%', borderRadius: '4px', marginBottom: '0.75rem'}} />
+<img src="/ogd-handbook-entwurf/img/datavis_bevölkerung.png" alt="Screenshot Bevölkerungsvisualisierung auf zh.ch" style={{width: '100%', borderRadius: '4px', marginBottom: '0.75rem'}} />
 
 Die Entwicklung der Bevölkerung wird mit einem Flächendiagramm dargestellt. Ergänzend veranschaulicht eine Bevölkerungspyramide die Alters- und Geschlechtsstruktur sowie die Staatsangehörigkeit der Bevölkerung. Mithilfe von Interaktionselementen können die Daten gefiltert und die Darstellung angepasst werden.
 <br />
@@ -36,7 +36,7 @@ Die Entwicklung der Bevölkerung wird mit einem Flächendiagramm dargestellt. Er
 
 <Card title="Visualisierung: Leerwohnungen" href="https://www.zh.ch/de/planen-bauen/raumplanung/immobilienmarkt/leerwohnungen.html">
 
-<img src="/ogd-handbook/img/datavis_leerwohnung.png" alt="Screenshot Leerwohnungsvisualisierung auf zh.ch" style={{width: '83%', borderRadius: '4px', marginBottom: '0.75rem', display: 'block', margin: '0 auto 0.75rem'}} />
+<img src="/ogd-handbook-entwurf/img/datavis_leerwohnung.png" alt="Screenshot Leerwohnungsvisualisierung auf zh.ch" style={{width: '83%', borderRadius: '4px', marginBottom: '0.75rem', display: 'block', margin: '0 auto 0.75rem'}} />
 
 Die Entwicklung der Leerwohnungsziffer im Kanton und in den Regionen wird mit Balken- und Liniendiagrammen dargestellt. Zusätzlich ermöglicht eine interaktive Karte den Vergleich zwischen den Gemeinden.
 <br />

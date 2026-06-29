@@ -9,46 +9,46 @@ import { CardGrid, Card } from '@site/src/components/CardGrid';
 import DataClassification from '@site/src/components/DataClassification';
 
 export const classificationLevels = [
-  {
-    key: 'oeffentlich',
-    label: 'öffentlich',
-    bullets: [
-      'Daten (die keine Personenidentifikation ermöglichen)',
-      'Wahrung der öffentlichen Sicherheit',
-    ],
-    access: 'für Alle',
-    bottom: { label: 'Open Data', type: 'tag' },
-  },
-  {
-    key: 'intern',
-    label: 'intern',
-    bullets: [
-      'Personendaten, die Identifikation ermöglichen',
-      '«default»',
-    ],
-    access: 'Innerhalb der Verwaltung',
-    bottom: { label: 'Mehrfachverwendung von Daten', type: 'text' },
-  },
-  {
-    key: 'vertraulich',
-    label: 'vertraulich',
-    bullets: [
-      'Besondere Personendaten (§3 IDG)',
-      'Bekanntmachung (auch in der Verwaltung) schädlich',
-    ],
-    access: 'Ausgewählter Personenkreis',
-    bottom: { label: 'Mehrfachverwendung von Daten', type: 'text' },
-  },
-  {
-    key: 'geheim',
-    label: 'geheim',
-    bullets: [
-      'Besondere Personendaten (§3 IDG)',
-      'Bekanntmachung beschädigt Staatsinteressen',
-    ],
-    access: 'Einzelne Personen',
-    bottom: { type: 'shield' },
-  },
+{
+key: 'oeffentlich',
+label: 'öffentlich',
+bullets: [
+'Daten (die keine Personenidentifikation ermöglichen)',
+'Wahrung der öffentlichen Sicherheit',
+],
+access: 'für Alle',
+bottom: { label: 'Open Data', type: 'tag' },
+},
+{
+key: 'intern',
+label: 'intern',
+bullets: [
+'Personendaten, die Identifikation ermöglichen',
+'«default»',
+],
+access: 'Innerhalb der Verwaltung',
+bottom: { label: 'Mehrfachverwendung von Daten', type: 'text' },
+},
+{
+key: 'vertraulich',
+label: 'vertraulich',
+bullets: [
+'Besondere Personendaten (§3 IDG)',
+'Bekanntmachung (auch in der Verwaltung) schädlich',
+],
+access: 'Ausgewählter Personenkreis',
+bottom: { label: 'Mehrfachverwendung von Daten', type: 'text' },
+},
+{
+key: 'geheim',
+label: 'geheim',
+bullets: [
+'Besondere Personendaten (§3 IDG)',
+'Bekanntmachung beschädigt Staatsinteressen',
+],
+access: 'Einzelne Personen',
+bottom: { type: 'shield' },
+},
 ];
 
 # Data Governance
@@ -90,14 +90,14 @@ Open Government Data sind eine ständige Aufgabe, die OGD sind ein Produkt, das 
       <td>
         <ul>
           <li>Du erhebst und/oder bereinigst Daten für deine oder eine andere Verwaltungseinheit.</li>
-          <li>Du bereitest Daten gemäss [technischen und formalen Grundsätzen, Vorgaben und Empfehlungen](/ogd-handbook/daten_struktur_format/dateiformate) zu einfach nutzbaren Behördendaten auf.</li>
+          <li>Du bereitest Daten gemäss [technischen und formalen Grundsätzen, Vorgaben und Empfehlungen](/ogd-handbook-entwurf/daten_struktur_format/dateiformate) zu einfach nutzbaren Behördendaten auf.</li>
           <li>Du hältst die aufbereiteten Daten aktuell und stellst ihre Zugänglichkeit sicher.</li>
         </ul>
       </td>
       <td>
         <ul>
           <li>Du planst und leitest die Publikation offener Behördendaten deiner Verwaltungseinheit.</li>
-          <li>Du beschreibst Datensätze gemäss des [Schweizer Metadatenstandards für Datenportale und Kataloge (DCAT-AP CH)](/ogd-handbook/metadaten) und machst sie damit einfach auffindbar.</li>
+          <li>Du beschreibst Datensätze gemäss des [Schweizer Metadatenstandards für Datenportale und Kataloge (DCAT-AP CH)](/ogd-handbook-entwurf/metadaten) und machst sie damit einfach auffindbar.</li>
           <li>Mit den «Data Custodians» deiner Verwaltungseinheit organisierst du die Aufbereitung und laufende Aktualisierung einfach nutzbarer Behördendaten.</li>
         </ul>
       </td>

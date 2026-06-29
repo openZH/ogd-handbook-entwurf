@@ -131,7 +131,7 @@ Als Beispiel dienen uns echte Daten zu Neubeschaffungen bei der kantonalen Fahrz
 </table>
 </CollapseCard>
 
-<CollapseCard title="Ziel: Eine OGD-konforme CSV-Datei" header={<>Die Datei wurde nach den <a href="/ogd-handbook/daten_struktur_format/datenstruktur">Prinzipien von Tidy Data</a> aufbereitet. Jede Zeile ist eine Beobachtung, jede Spalte eine Variable - keine zusammengefassten Zellen, keine Totale, keine Prozentwerte. So kann die Datei direkt maschinell weiterverarbeitet werden.</>} previewHeight={300}>
+<CollapseCard title="Ziel: Eine OGD-konforme CSV-Datei" header={<>Die Datei wurde nach den <a href="/ogd-handbook-entwurf/daten_struktur_format/datenstruktur">Prinzipien von Tidy Data</a> aufbereitet. Jede Zeile ist eine Beobachtung, jede Spalte eine Variable - keine zusammengefassten Zellen, keine Totale, keine Prozentwerte. So kann die Datei direkt maschinell weiterverarbeitet werden.</>} previewHeight={300}>
 
 <table>
   <thead>
@@ -577,37 +577,37 @@ cat("Die Distribution in der MDV wurde aktualisiert.\n")
 
 - **Warum verwenden wir `janitor::remove_empty()`?** <br /> Excel-Dateien enthalten oft leere Zeilen oder leere Spalten, die nur für das Layout da sind. `janitor::remove_empty()` entfernt diese Elemente früh im Prozess und macht die Tabelle einfacher weiterzuverarbeiten.
 
-- **Warum setzen wir die Spaltennamen hier von Hand?** <br /> 
-In dieser Beispieldatei stehen die Daten zwar an einer gut erkennbaren Stelle, aber nicht in einer perfekt vorbereiteten Tabelle mit sofort nutzbaren Spaltennamen. Für ein Einsteiger-Tutorial ist es deshalb einfacher, zuerst die relevanten Spalten auszuwählen und ihnen dann bewusst klare Namen zu geben.
+- **Warum setzen wir die Spaltennamen hier von Hand?** <br />
+  In dieser Beispieldatei stehen die Daten zwar an einer gut erkennbaren Stelle, aber nicht in einer perfekt vorbereiteten Tabelle mit sofort nutzbaren Spaltennamen. Für ein Einsteiger-Tutorial ist es deshalb einfacher, zuerst die relevanten Spalten auszuwählen und ihnen dann bewusst klare Namen zu geben.
 
 - **Warum formen wir von breit nach lang um?** <br />
-Breite Tabellen sind für Menschen oft gut lesbar. Für OGD und Datenverarbeitung ist eine lange Tabelle aber meistens besser. Anstatt separater Spalten für Benzin, Diesel und Gas enthält diese eine Spalte für den Technologienamen und eine weitere für den zugehörigen Wert. Das ist sauberer, standardisierter und einfacher auszuwerten.
+  Breite Tabellen sind für Menschen oft gut lesbar. Für OGD und Datenverarbeitung ist eine lange Tabelle aber meistens besser. Anstatt separater Spalten für Benzin, Diesel und Gas enthält diese eine Spalte für den Technologienamen und eine weitere für den zugehörigen Wert. Das ist sauberer, standardisierter und einfacher auszuwerten.
 
 ---
 
 ## Typische Fehler und wie du damit umgehst
 
-- **Fehler 1: Datei wird nicht gefunden** <br /> 
-*Beispiel: `Error: path does not exist`.* Dann stimmt meistens der Dateipfad nicht. Prüfe:
+- **Fehler 1: Datei wird nicht gefunden** <br />
+  _Beispiel: `Error: path does not exist`._ Dann stimmt meistens der Dateipfad nicht. Prüfe:
   - Liegt die Excel-Datei im richtigen Ordner?
   - Ist der Dateiname exakt richtig geschrieben?
   - Stimmt die Dateiendung `.xlsx`?
 
-- **Fehler 2: Ein Paket fehlt** <br /> 
-*Beispiel: `there is no package called ...`<br />* 
-Dann installiere das fehlende Paket mit `install.packages(...)`.
+- **Fehler 2: Ein Paket fehlt** <br />
+  _Beispiel: `there is no package called ...`<br />_
+  Dann installiere das fehlende Paket mit `install.packages(...)`.
 
 - **Fehler 3: Die ausgewählten Spalten passen nicht** <br />
-Das Tutorial basiert auf einer konkreten Excel-Struktur. Wenn sich die Quelldatei im nächsten Jahr verändert, kann es sein, dass die relevanten Daten nicht mehr in den Spalten 3 bis 11 stehen.<br />
-Prüfe dann zuerst die Rohdaten mit: `print(utils::head(excel_roh, 10))` und passe danach die Spaltenauswahl in `dplyr::select()` an.
+  Das Tutorial basiert auf einer konkreten Excel-Struktur. Wenn sich die Quelldatei im nächsten Jahr verändert, kann es sein, dass die relevanten Daten nicht mehr in den Spalten 3 bis 11 stehen.<br />
+  Prüfe dann zuerst die Rohdaten mit: `print(utils::head(excel_roh, 10))` und passe danach die Spaltenauswahl in `dplyr::select()` an.
 
 - **Fehler 4: Eine Spalte wird nicht gefunden** <br />
-*Beispiel: `Can't select columns that don't exist`* <br />
-Dann stimmen die Spaltennamen im Skript nicht mehr zur Excel-Datei. Prüfe mit: `names(excel_relevant)`.
-Passe danach die Namen oder die Auswahl im Skript an.
+  _Beispiel: `Can't select columns that don't exist`_ <br />
+  Dann stimmen die Spaltennamen im Skript nicht mehr zur Excel-Datei. Prüfe mit: `names(excel_relevant)`.
+  Passe danach die Namen oder die Auswahl im Skript an.
 
 - **Fehler 5: zhapir kann nicht auf die MDV zugreifen. Fehler 401, 404 oder 500.** <br />
-Prüfe in diesem Fall:
+  Prüfe in diesem Fall:
   - Ist das Paket `zhapir` installiert?
   - Ist dein API Key als `ZHAPIR_API_KEY` in der `.Renviron` gespeichert?
   - Hast du die R-Session nach dem Eintrag in `.Renviron` neu gestartet?

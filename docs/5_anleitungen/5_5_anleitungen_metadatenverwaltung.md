@@ -27,23 +27,23 @@ Ein Datensatz durchläuft folgende Schritte bis zur Publikation:
 ### Datensatz erstellen
 
 <video controls width="100%">
-  <source src="/ogd-handbook/video/MDV Tutorial_Datensatz erstellen.mp4" />
+  <source src="/ogd-handbook-entwurf/video/MDV Tutorial_Datensatz erstellen.mp4" />
 </video>
 
 ### Datensatz & Distribution aktualisieren
 
 <video controls width="100%">
-  <source src="/ogd-handbook/video/MDV Tutorial_Datensatz bearbeiten.mp4" />
+  <source src="/ogd-handbook-entwurf/video/MDV Tutorial_Datensatz bearbeiten.mp4" />
 </video>
 
 ### Distributionen anordnen
 
 <video controls width="100%">
-  <source src="/ogd-handbook/video/MDV Tutorial_Distributionen anordnen.mp4" />
+  <source src="/ogd-handbook-entwurf/video/MDV Tutorial_Distributionen anordnen.mp4" />
 </video>
 
 ### Datenkomponente im zhWeb einfügen
 
 <video controls width="100%">
-  <source src="/ogd-handbook/video/MDV Tutorial_Datenkomponente.mp4" />
+  <source src="/ogd-handbook-entwurf/video/MDV Tutorial_Datenkomponente.mp4" />
 </video>
