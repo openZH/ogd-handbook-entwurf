@@ -1,4 +1,4 @@
-# OGD Handbuch Kanton Zürich
+# OGD Handbuch Kanton Zürich – Entwurf
 
 Dieses Repository enthält den Quellcode des **Open Government Data Handbuchs** des Kantons Zürich. Es richtet sich an Data Stewards und Mitarbeitende kantonaler Verwaltungseinheiten, die Daten als OGD publizieren möchten - sowie an alle, die offene Verwaltungsdaten des Kantons Zürich nutzen wollen.
 
