@@ -6,7 +6,7 @@ slug: /
 import { CardGrid, Card } from "@site/src/components/CardGrid";
 import StartseiteHero from "@site/src/components/StartseiteHero";
 
-# Los geht's
+# Los geht's – Entwurf
 
 <StartseiteHero
 image={require('/img/intro.png').default}
